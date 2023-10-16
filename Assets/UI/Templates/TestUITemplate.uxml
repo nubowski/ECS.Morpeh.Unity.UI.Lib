@@ -1,0 +1,8 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/USS/UIButtonTemplate.uss?fileID=7433441132597879392&amp;guid=f6d00a277283b6d479c900f41a6cb7db&amp;type=3#UIButtonTemplate" />
+    <Style src="project://database/Assets/UI/USS/UILabelTemplate.uss?fileID=7433441132597879392&amp;guid=da10873e51864374badb06db3e7b4487&amp;type=3#UILabelTemplate" />
+    <ui:Label name="label1" text="Label 1" class="standard-label" />
+    <ui:Label name="label2" text="Label 2" class="standard-label" />
+    <ui:Button name="uiButton1" text="Click Me!" class="button-style" />
+    <ui:Button name="uiButton2" text="Click Me!" class="button-style" />
+</ui:UXML>

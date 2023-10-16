@@ -1,0 +1,15 @@
+﻿.button-style {
+    font-size: 16px;
+    padding: 8px 15px;
+    background-color: #333333; /* Dark gray background */
+    color: #FFFFFF; /* White text */
+    border-radius: 5px; /* Rounded corners */
+
+    /* For a hover effect */
+    --unity-button-border-color-hover: #777777; /* Even lighter gray when hovering */
+    --unity-button-background-color-hover: #444444; /* Slightly lighter background when hovering */
+
+    /* For an active press effect */
+    --unity-button-border-color-down: #222222; /* Darker gray when pressed */
+    --unity-button-background-color-down: #222222; /* Darker background when pressed */
+}
