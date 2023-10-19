@@ -33,15 +33,11 @@ public sealed class MUIInitPanelTemplateSystem : UpdateSystem
                 if (handle.Status == AsyncOperationStatus.Succeeded)
                 {
                     var template = handle.Result;
-                    var panelClone = template.CloneTree();
 
-                    ref var globalUIComponent = ref entity.GetComponent<MUIPanelComponent>();
+                    ref var globalUIComponent = ref entity.GetComponent<MUIPanelComponent>().uiDocument;
                     
-                    var rootVisualElement = globalUIComponent.uiDocument.rootVisualElement;
-
-                    // VisualElement to the UIDocument's root
-                    rootVisualElement.Add(panelClone);
-
+                    globalUIComponent.visualTreeAsset = template;
+                    
                     entity.AddComponent<MUIPanelReadyToViewComponent>();
                 }
                 else
